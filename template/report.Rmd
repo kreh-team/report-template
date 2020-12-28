@@ -1,0 +1,47 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "John Smith"
+date: "`r Sys.Date()`"
+documentclass: scrartcl
+csl: plos-computational-biology.csl
+output:
+  pdf_document:
+    keep_tex: true
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    includes:
+      in_header: preamble.tex
+    latex_engine: pdflatex
+    # citation_package: natbib
+    # template: template.tex
+bibliography: [packages.bib, bibliography.bib]
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(fig.width = 7, fig.height = 4, fig.align = "center", out.width = '80%')
+```
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'knitr', 'rmarkdown', 'ggplot2'
+), 'packages.bib')
+```
+
+# Hello world
+
+Hello, and then we used [@Lander2001] for something.
+
+## Hello second section
+
+# Testing depths
+
+Thanks to [@R-base] and [@R-ggplot2]
+
+## Sub-2-sec
+
+Asd asd
+
+# References {-}
