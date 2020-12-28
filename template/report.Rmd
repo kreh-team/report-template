@@ -14,9 +14,7 @@ output:
     includes:
       in_header: preamble.tex
     latex_engine: pdflatex
-    # citation_package: natbib
     # template: template.tex
-    extra_dependencies: ["float"]
 bibliography: [packages.bib, bibliography.bib]
 ---
 
@@ -43,7 +41,7 @@ knitr::write_bib(c(
 
 ```{r include=FALSE}
 kable <- function(x, ...) {
-  knitr::kable(x, format = "latex", booktabs = TRUE, ...) %>% 
+  knitr::kable(x, format = "latex", booktabs = TRUE, ...) %>%
     kableExtra::kable_styling(
       position = "center",
       latex_options = "HOLD_position"
