@@ -49,6 +49,22 @@ kable <- function(x, ...) {
 }
 ```
 
+# Tweak the title
+
+## Add logo before title
+
+One option to add a logo before your title is to use the `titling` and `pdfpages` packages. On the example below that, we add a logo and additional information such as supervisors to the title.
+
+```yaml
+header-includes: 
+  - \usepackage{titling}
+  - \usepackage{pdfpages}
+  - \pretitle{\begin{center}\vbox{\centering \includegraphics[width=0.3\textwidth]{logo.pdf}}\vspace{24bp}\fontsize{15bp}{15bp}\selectfont\par \bfseries Annual Report \vspace{10bp} \fontsize{18bp}{18bp}\selectfont\par\bfseries}
+  - \posttitle{\par\end{center}}
+  - \preauthor{\begin{center}\fontsize{14bp}{14bp}\selectfont}
+  - \postauthor{\par\vspace{10bp}\fontsize{12bp}{12bp}\selectfont \emph{Supervisor} Heather Davis \par \emph{Second supervisor} Bruce Williams \end{center}\vspace{24bp}}
+```
+
 # First section
 
 ## BibTeX references
