@@ -65,6 +65,17 @@ header-includes:
   - \postauthor{\par\vspace{10bp}\fontsize{12bp}{12bp}\selectfont \emph{Supervisor} Heather Davis \par \emph{Second supervisor} Bruce Williams \end{center}\vspace{24bp}}
 ```
 
+## Add drawing after the date
+
+Similarly, one can include a drawing after the date by using:
+
+```yaml
+header-includes:
+  ...
+  - \predate{\begin{center}}
+  - \postdate{\par\vspace{100bp}\vbox{\centering \includegraphics[width=0.15\textwidth]{figures/drawing.pdf}}\end{center}}
+```
+
 # First section
 
 ## BibTeX references
