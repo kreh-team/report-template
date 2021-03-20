@@ -162,4 +162,20 @@ Fourier introduced the concept of representing a given function $f(x)$ by a trig
 
 You can reference numbered equations like this: \eqref{eq:fourierseries} (`\eqref{eq:fourierseries}`).
 
+
+# (APPENDIX) Appendix {-}
+
+\renewcommand{\thefigure}{SI\arabic{figure}} \setcounter{figure}{0}
+\renewcommand{\thetable}{SI\arabic{table}} \setcounter{table}{0}
+\renewcommand{\theequation}{SI\arabic{table}} \setcounter{equation}{0}
+
+# Supplementary Information {-}
+
+```{r iris-table-sup}
+head(iris, 3) %>% 
+  kable(caption = "A simple table in \\{knitr\\}.")
+```
+
+This table can be referenced as usual: \@ref(tab:iris-table-sup) (`\@ref(tab:iris-table-sup)`).
+
 # References {-}
