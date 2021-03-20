@@ -40,11 +40,12 @@ knitr::write_bib(c(
 ```
 
 ```{r include=FALSE}
-kable <- function(x, ...) {
+kable <- function(x, font_size = NULL, ...) {
   knitr::kable(x, format = "latex", booktabs = TRUE, ...) %>%
     kableExtra::kable_styling(
       position = "center",
-      latex_options = "HOLD_position"
+      latex_options = "HOLD_position",
+      font_size = font_size
     )
 }
 ```
