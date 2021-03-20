@@ -85,7 +85,7 @@ To reference entries, you can use
 
 - Single reference: `[@Lander2001]` - [@Lander2001].
 - Multiple references A: `[@R-base] and [@R-ggplot2]` - [@R-base] and [@R-ggplot2].
-- Multiple references B: `[@R-base, @R-ggplot2]` - [@R-base; @R-ggplot2].
+- Multiple references B: `[@R-base; @R-ggplot2]` - [@R-base; @R-ggplot2].
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit [@Lander2001], sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
